@@ -1,6 +1,6 @@
 {
   "name": "@sergiovegasalonso/calculator-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculator library.",
   "main": "dist-node/index.js",
   "browser":"dist-browser/index.js",
@@ -9,7 +9,7 @@
     "calculator",
     "library"
   ],
-  "author": "Sergio Vegas Alonso",
+  "author": "Sergio Vegas Alonso <sergio.vegas.alonso@gmail.com> (https://www.sergio-vegas-alonso.io)",
   "license": "MIT",
   "scripts": {
     "build:node": "npx tsc src/index.ts --outDir dist-node",
