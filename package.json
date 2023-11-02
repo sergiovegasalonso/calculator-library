@@ -1,0 +1,22 @@
+{
+  "name": "@sergiovegasalonso/calculator-library",
+  "version": "1.0.0",
+  "description": "Calculator library.",
+  "main": "dist-node/index.js",
+  "browser":"dist-browser/index.js",
+  "keywords": [
+    "example",
+    "calculator",
+    "library"
+  ],
+  "author": "Sergio Vegas Alonso",
+  "license": "MIT",
+  "scripts": {
+    "build:node": "npx tsc src/index.ts --outDir dist-node",
+    "build:browser": "npx tsc src/index.ts --outDir dist-browser --module ES6",
+    "build": "yarn build:node & yarn build:browser"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
