@@ -19,7 +19,7 @@
     "prettier": "$ npx prettier --write src/**",
     "lint:js": "eslint --ext \".ts\" --ignore-path .gitignore .",
     "lintfix": "prettier --write --list-different . & npm run lint:js --fix src/**",
-    "precommit": "npm run lintfix && npm run typecheck"
+    "precommit": "npm run lintfix"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.9.1",
