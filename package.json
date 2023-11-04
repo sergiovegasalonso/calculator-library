@@ -2,8 +2,8 @@
   "name": "@sergiovegasalonso/calculator-library",
   "version": "1.0.2",
   "description": "Calculator library.",
-  "main": "dist-node/index.js",
-  "browser": "dist-browser/index.js",
+  "main": "dist/node/index.js",
+  "browser": "dist/browser/index.js",
   "keywords": [
     "example",
     "calculator",
@@ -12,8 +12,8 @@
   "author": "Sergio Vegas Alonso <sergio.vegas.alonso@gmail.com> (https://www.sergio-vegas-alonso.io)",
   "license": "MIT",
   "scripts": {
-    "build:node": "npx tsc src/index.ts --outDir dist-node",
-    "build:browser": "npx tsc src/index.ts --outDir dist-browser --module ES6",
+    "build:node": "npx tsc src/index.ts --outDir dist/node --module CommonJS --moduleResolution node",
+    "build:browser": "npx tsc src/index.ts --outDir dist/browser --module ES6 --moduleResolution node",
     "build": "npm run build:node & npm run build:browser",
     "test": "vitest run",
     "prettier": "prettier --write --list-different src/**",
